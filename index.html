@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rechercher des joueurs de football avec des informations détaillées sur leur carrière, club, pays et plus encore." />
+    <meta name="keywords" content="football, joueur, recherche, API, TheSportsDB" />
+    <meta name="author" content="Sylvanius AHIDJE - NixLAbs" />
+    <link rel="icon" href="favicon.ico" />
+    
+<link rel="stylesheet" href="style.css">
+  <title>Recherche Joueur</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center p-4">
+    <header class="mb-8 text-center">
+        <h1 class="text-4xl font-bold mb-2"><span class="gradient-text">Get Football Player Info</span></h1>
+        <p class="text-gray-400">Recherchez des joueurs de football et obtenez des informations détaillées.</p>
+  </header>
+  <div class="w-full max-w-xl bg-gray-800 rounded-2xl p-6 shadow-lg">
+    <h1 class="text-3xl font-bold mb-4 text-center">Recherche de Joueur</h1>
+
+    <div class="flex items-center gap-2 mb-6">
+      <input id="playerInput" type="text" placeholder="Entrez un nom de joueur"
+        class="flex-1 p-3 rounded-lg text-black" />
+      <button id="searchBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg">Chercher</button>
+    </div>
+
+    <div id="result" class="grid gap-6 md:grid-cols-2 mt-4"></div>
+  </div>
+
+    <footer class="mt-8 text-center text-gray-500">
+        <p>&copy; <span id="currentYear"></span> Get Football Player Info</p>
+        <p>Powered by TheSportsDB API</p>
+        <p>Créé par <span class="text-yellow-500">NixLAbs</span></p>
+    </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
